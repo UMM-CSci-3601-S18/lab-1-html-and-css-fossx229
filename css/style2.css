@@ -11,3 +11,28 @@ body{
     padding: 30px;
     background-color: #ffffff;
 }
+
+h1{
+   text-align: center;
+
+
+}
+
+h2{
+
+}
+
+.section {
+  text-align: left;
+  font-family: "Arial";
+
+}
+.courses {
+  padding: 25 px;
+  margin: 25 px;
+  font-family: "Arial";
+
+li.pslo {
+  list-style: square;
+  
+}
