@@ -6,6 +6,13 @@ use , to separate a list of things that have some shared css rule
 use float to make something locate itself on the right or left
 
 */
+/*
+Change number 1, this makes the main tile large.
+This is an example of using an id.
+*/
+#main-title {
+  font-size: 40px;
+}
 
 body{
     padding: 30px;
@@ -14,25 +21,61 @@ body{
 
 h1{
    text-align: center;
-
-
-}
-
-h2{
+   background-color: orange;
 
 }
 
+/*
+Change number 2, the font-family has been changed.
+This also uses grouping with heading 1 and two.
+*/
+h1, h2 {
+  font-family: "Times New Roman", Times, serif;
+}
+/*
+Change number 3, adds a lightblue background to and a border to the div
+class section. This is an example of using a class
+*/
 .section {
+  border-radius: 25px;
+  border: 5px double;
+  margin: 10px;
+  padding: 20px;
+background-color: lightblue;
+}
+/*
+Change number 4, the list style has been changed to circles.
+*/
+li.pslo {
   text-align: left;
   font-family: "Arial";
+  list-style-type: circle;
 
 }
+
 .courses {
   padding: 25 px;
   margin: 25 px;
   font-family: "Arial";
+}
 
 li.pslo {
   list-style: square;
-  
+  padding: 25 px;
+  margin: 25 px;
+  font-family: "Arial";
+}
+/*
+Change number 5, changed the way the text for required courses is displayed
+Example of using nesting to change the list-style.
+*/
+#courses>ul {
+  display: inline-block;
+    list-style: square;
+}
+#faculty>ul>li {
+    display: inline-block;
+    font-family: sans-serif;
+    padding: 30px;
+
 }
